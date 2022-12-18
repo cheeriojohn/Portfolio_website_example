@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=IBM+Plex+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <navbar>
+                <a href="./index.html"><button>home</button></a>
+                <a href="./gallery.html"><button>gallery</button></a>
+                <a href="./andy.html"><button>andy</button></a>
+                <a href="./contact.html"><button>contact</button></a>
+            </navbar>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align" id="main-title">
+                <h1>The Bacton Seal</h1>
+            </div>
+            <div>
+                <div class="carousel z-depth-4"">
+                    <a class=" carousel-item" href="#one!"><img id="bac1" src="./images/gallery/BactonSealNo1_600px.jpg"><p class="caption">The Bacton Seal no.1</p></a>
+                    <a class="carousel-item" href="#two!"><img
+                            src="./images/gallery/conversationswithjackdaws350px.jpg"><p class="caption">Conversations with Jackdaws</p></a>
+                    <a class="carousel-item" href="#three!"><img
+                            src="./images/gallery/InDarkSpacesDarkThingsHappen_350px.jpg"><p class="caption">In dark spaces...</p></a>
+                    <a class="carousel-item " href="#four!"><img
+                            src="./images/gallery/inTheGodsWeBlindlyTrust_350px.jpg"><p class="caption">In the gods we blindly trust</p></a>
+                    <a class="carousel-item" href="#five!"><img src="./images/gallery/jackdaw-man_350px.jpg"><p class="caption">The Jackdaw Man</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script>
+
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                indicators: true,
+                shift: 0,
+                duration: 500
+            });
+            setInterval(function () {
+                $('.carousel').carousel('next');
+            }, 3000);
+        });
+    </script>
+    <!-- <script type="text/javascript" src="./js/main.js"></script> -->
+</body>
+
+</html>
